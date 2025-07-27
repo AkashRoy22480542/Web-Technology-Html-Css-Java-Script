@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Border Collapse with px</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    .table1px td {
+      border: 1px solid blue;
+      padding: 10px;
+    }
+
+    .table2px td {
+      border: 2px solid green;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🔵 Table with 1px Border</h2>
+  <table class="table1px">
+    <tr>
+      <td>One</td>
+      <td>Two</td>
+    </tr>
+    <tr>
+      <td>Three</td>
+      <td>Four</td>
+    </tr>
+  </table>
+
+  <h2>🟢 Table with 2px Border</h2>
+  <table class="table2px">
+    <tr>
+      <td>One</td>
+      <td>Two</td>
+    </tr>
+    <tr>
+      <td>Three</td>
+      <td>Four</td>
+    </tr>
+  </table>
+
+</body>
+</html>

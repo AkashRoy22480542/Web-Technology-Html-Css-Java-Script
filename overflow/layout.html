@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Layout with DD and Test</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    .container {
+      display: flex;
+      padding: 20px;
+    }
+
+    .main {
+      flex: 3;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+
+    .sidebar {
+      flex: 1;
+      padding: 20px;
+      background-color: #ddd;
+    }
+
+    .dd-content {
+      background-color: #ffeeba;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    .test-content {
+      background-color: #cce5ff;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Simple Website</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="main">
+      <h2>Main Content</h2>
+      <p>This is the main area of the website. You can add articles, text, images, etc. here.</p>
+    </div>
+    <div class="sidebar">
+      <h2>Sidebar</h2>
+      <p>This is the sidebar. You can add links, ads, or other information here.</p>
+    </div>
+  </div>
+
+  <div class="dd-content">
+    <h2>DD Content</h2>
+    <p>This is the DD content section. You can use this area to show extra information, announcements, or any dynamic data.</p>
+  </div>
+
+  <div class="test-content">
+    <h2>Test Section</h2>
+    <p>This is the test section for testing content layout and design.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
