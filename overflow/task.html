@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Day and Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            width: 300px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+        }
+        video {
+            width: 200px;
+            display: block;
+            margin: 5px 0;
+        }
+        img {
+            width: 120px;
+            display: block;
+            margin: 5px 0;
+        }
+        input[type="text"] {
+            margin: 5px 0;
+        }
+        input[type="submit"] {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Course Day Table</h2>
+    <table>
+        <tr>
+            <th>Course</th>
+            <th>Day</th>
+        </tr>
+        <tr>
+            <td>HTML Basics</td>
+            <td>Sunday</td>
+        </tr>
+        <tr>
+            <td>CSS Styling</td>
+            <td>Tuesday</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Thursday</td>
+        </tr>
+    </table>
+
+    <h2>Image Section</h2>
+    
+    <img src="https://via.placeholder.com/120" alt="Sample Image">
+
+    <!-- Video -->
+    <video controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+
+    <!-- Text Input -->
+    <input type="text" id="text" value="text"><br>
+
+    <!-- Radio Buttons -->
+    <label><input type="radio" name="choice" value="Option 1"> Option 1</label>
+    <label><input type="radio" name="choice" value="Option 2"> Option 2</label><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit" onclick="showMessage()">
+
+    <p id="result"></p>
+
+    <script>
+        function showMessage() {
+            const name = document.getElementById("nameInput").value;
+            const selected = document.querySelector('input[name="choice"]:checked');
+            const choice = selected ? selected.value : "No option selected";
+            document.getElementById("result").innerText = "Name: " + name + " | Choice: " + choice;
+        }
+    </script>
+
+</body>
+</html>

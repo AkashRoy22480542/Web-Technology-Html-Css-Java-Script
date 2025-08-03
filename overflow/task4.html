@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>forms</title>
+</head>
+<body>
+    <div  style="background-color: rgb(199, 179, 190);">
+    <form>
+        <label for="username">username: </label>
+        <input type="text" id="username" placeholder="name"><br><br>
+        
+        <label for="password">password: </label>
+        <input type="password" id="password" placeholder="password" minlength="6" maxlength="10"><br><br>
+
+        <label for="email">email:</label>
+        <input type="email" id="email" placeholder="email"><br><br>
+        
+        <label for="bday">birthdate:</label>
+        <input type="date" id="bday"><br><br>
+
+        <label for="Male.">Male</label>
+        <input type="radio" id="Male" value="Male" name="title"> 
+
+        <label for="Female.">Female</label>
+        <input type="radio" id="Female" value="Female" name="title"> 
+        <br> <br>
+
+        <label for="file">file: </label>
+        <input type="file" id="file"><br><br>
+
+         <div>
+            <video controls muted loop>
+                <source src="" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </div>
+        <br><br>
+
+<table border="10px">
+    <tr>
+        <th> course</th>
+        <th> day</th>
+    </tr>
+
+    <tr>
+          <td>math</td>
+          <td> sunday</td>
+
+    </tr>
+</table>
+<br><br>
+        <input type="reset"> 
+        <input type="submit">
+    </form>
+    </div>
+
+</body>
+</html>
